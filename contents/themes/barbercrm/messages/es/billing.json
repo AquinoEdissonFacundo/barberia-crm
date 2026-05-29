@@ -1,0 +1,29 @@
+{
+  "plans": {
+    "starter": {
+      "name": "Básico",
+      "description": "Para barberías pequeñas que están comenzando"
+    },
+    "pro": {
+      "name": "Pro",
+      "description": "Para barberías en crecimiento con varios barberos"
+    },
+    "business": {
+      "name": "Negocio",
+      "description": "Para barberías grandes con analíticas avanzadas"
+    }
+  },
+  "features": {
+    "online_booking": "Página de Reservas Online",
+    "online_booking_description": "Página pública donde los clientes reservan turnos",
+    "analytics": "Analíticas Avanzadas",
+    "analytics_description": "Reportes detallados de ingresos, citas y rendimiento por barbero",
+    "priority_support": "Soporte Prioritario",
+    "priority_support_description": "Respuestas más rápidas de nuestro equipo de soporte"
+  },
+  "limits": {
+    "barbers": "Barberos",
+    "appointments_per_month": "Turnos / mes"
+  },
+  "unlimited": "Ilimitado"
+}

@@ -1,0 +1,269 @@
+/**
+ * Starter Theme - Application Configuration
+ *
+ * This file allows the theme to override core application configuration values.
+ * Only include properties you want to override - missing properties will use core defaults.
+ *
+ * Related config files:
+ * - permissions.config.ts: Roles, team/entity/feature permissions (Single Source of Truth)
+ * - billing.config.ts: Plans, features, limits, subscriptions
+ * - dashboard.config.ts: UI configuration (topbar, sidebar, settings)
+ * - dev.config.ts: Development tools (devKeyring, debug settings)
+ * - theme.config.ts: Visual styling (colors, fonts, spacing)
+ */
+
+export const APP_CONFIG_OVERRIDES = {
+  // =============================================================================
+  // APPLICATION METADATA
+  // =============================================================================
+  app: {
+    name: 'BarberCRM',
+    version: '1.0.0',
+  },
+
+  // =============================================================================
+  // TEAMS CONFIGURATION
+  // =============================================================================
+  /**
+   * Team modes available:
+   * - 'multi-tenant': Multiple teams, team switching enabled (e.g., CRM, Project Management)
+   * - 'single-tenant': One organization, no team switching (e.g., Internal tools)
+   * - 'single-user': Personal app, no teams (e.g., Blog, Personal dashboard)
+   */
+  teams: {
+    mode: 'single-tenant' as const,
+    /**
+     * Available team roles for this theme
+     * Core roles: owner, admin, member, viewer
+     * Custom roles can be added here and configured in permissions.config.ts
+     */
+    availableTeamRoles: ['owner', 'admin', 'member'],
+    options: {
+      maxMembersPerTeam: 50,
+      allowLeaveTeam: true,
+      allowCreateTeams: true,
+    },
+  },
+
+  // =============================================================================
+  // INTERNATIONALIZATION
+  // =============================================================================
+  i18n: {
+    /**
+     * Supported locales for your theme
+     */
+    supportedLocales: ['en', 'es'],
+
+    /**
+     * Default locale
+     */
+    defaultLocale: 'en' as const,
+
+    /**
+     * Translation namespaces used by this theme
+     * Core namespaces are automatically included
+     */
+    namespaces: [
+      'common',
+      'dashboard',
+      'settings',
+      'auth',
+      'public',
+      'validation',
+      // Theme-specific namespaces:
+      'tasks',
+    ],
+  },
+
+  // =============================================================================
+  // API CONFIGURATION
+  // =============================================================================
+  api: {
+    cors: {
+      // Theme-specific CORS origins (extends core defaults, does not replace)
+      // Core already includes: localhost:3000, localhost:5173, and their 127.0.0.1 variants
+      additionalOrigins: {
+        development: [
+          // Add your development origins here
+          // 'http://localhost:4200', // Angular dev server
+          // 'http://localhost:8081', // Expo mobile web
+        ],
+        production: [
+          // Add your production origins here
+          // 'https://mobile.yourapp.com',
+        ],
+      },
+    },
+  },
+
+  // =============================================================================
+  // AUTHENTICATION
+  // =============================================================================
+  /**
+   * Registration modes:
+   * - 'open': Anyone can register (email+password and Google OAuth) - DEFAULT
+   * - 'domain-restricted': Only Google OAuth for specific email domains
+   * - 'invitation-only': Registration only via invitation link
+   */
+  auth: {
+    registration: {
+      mode: 'invitation-only' as const,
+      // allowedDomains: ['yourcompany.com'], // Only for 'domain-restricted' mode
+    },
+    providers: {
+      google: {
+        enabled: true,
+      },
+    },
+    /**
+     * Whether Better Auth automatically sends the verification email on signup.
+     *
+     * - `true` (default): users get a "Verify Your Email Address" link email
+     *   immediately when they sign up via `/api/auth/sign-up/email`.
+     * - `false`: suppress the automatic email. Use this when your project
+     *   verifies email ownership through other means (OTP code, invitation
+     *   token, claim-account flow). The `sendVerificationEmail` function
+     *   remains available — you can still trigger link-based verification
+     *   explicitly when you need to.
+     *
+     * `requireEmailVerification: true` is enforced regardless: users with
+     * `emailVerified: false` cannot sign in.
+     */
+    sendVerificationEmailOnSignup: true,
+  },
+
+  // =============================================================================
+  // DOCUMENTATION
+  // =============================================================================
+  /**
+   * Documentation system configuration
+   *
+   * Structure:
+   * - public: User-facing documentation at /docs
+   * - superadmin: Admin documentation at /superadmin/docs
+   *
+   * NOTE: Plugin docs are NOT in the registry - they are for developer reference only (IDE/LLM).
+   */
+  docs: {
+    enabled: true,
+    publicAccess: true,
+    searchEnabled: true,
+    breadcrumbs: true,
+    public: {
+      enabled: true,
+      open: true,
+      label: 'Documentation',
+    },
+    superadmin: {
+      enabled: true,
+      label: 'Admin Docs',
+    },
+  },
+
+  // =============================================================================
+  // SIDEBAR NAVIGATION SECTIONS
+  // =============================================================================
+  /**
+   * Replaces entity auto-links. ALL entities with showInMenu:true must be
+   * listed here or they disappear from the sidebar.
+   */
+  customSidebarSections: [
+    {
+      id: 'barbershop',
+      labelKey: 'barbershop',
+      icon: 'Store',
+      order: 1,
+      items: [
+        { id: 'appointments',  href: '/dashboard/appointments',  icon: 'CalendarCheck', labelKey: 'appointments'  },
+        { id: 'clients',       href: '/dashboard/clients',       icon: 'Users',         labelKey: 'clients'       },
+        { id: 'barbers',       href: '/dashboard/barbers',       icon: 'Scissors',      labelKey: 'barbers'       },
+        { id: 'services',      href: '/dashboard/services',      icon: 'Sparkles',      labelKey: 'services'      },
+      ],
+    },
+    {
+      id: 'tools',
+      labelKey: 'tools',
+      icon: 'Wrench',
+      order: 2,
+      items: [
+        { id: 'shop-config',    href: '/dashboard/shop-config',   icon: 'Store',        labelKey: 'shopConfig'    },
+        { id: 'customize-shop', href: '/dashboard/customize',    icon: 'Wand2',        labelKey: 'customizeShop' },
+        { id: 'calendar',      href: '/dashboard/calendar',      icon: 'CalendarDays', labelKey: 'calendar'      },
+        { id: 'clients-alert', href: '/dashboard/clients-alert', icon: 'BellRing',     labelKey: 'clientsAlert'  },
+        { id: 'tasks',         href: '/dashboard/tasks',         icon: 'CheckSquare',   labelKey: 'tasks'         },
+        { id: 'products',      href: '/dashboard/products',      icon: 'Package',       labelKey: 'products'      },
+      ],
+    },
+  ],
+
+  // =============================================================================
+  // MOBILE NAVIGATION
+  // =============================================================================
+  mobileNav: {
+    /**
+     * Bottom navigation bar items
+     * Icon names use lucide-react icons (https://lucide.dev)
+     */
+    items: [
+      {
+        id: 'home',
+        labelKey: 'common.mobileNav.home',
+        href: '/dashboard',
+        icon: 'Home',
+        enabled: true,
+      },
+      {
+        id: 'create',
+        labelKey: 'common.mobileNav.create',
+        icon: 'Plus',
+        isCentral: true,
+        action: 'quickCreate',
+        enabled: true,
+      },
+      {
+        id: 'settings',
+        labelKey: 'common.mobileNav.settings',
+        href: '/dashboard/settings',
+        icon: 'Settings',
+        enabled: true,
+      },
+      {
+        id: 'more',
+        labelKey: 'common.mobileNav.more',
+        icon: 'Menu',
+        action: 'moreSheet',
+        enabled: true,
+      },
+    ],
+
+    /**
+     * "More" sheet secondary navigation items
+     */
+    moreSheetItems: [
+      {
+        id: 'profile',
+        labelKey: 'common.navigation.profile',
+        href: '/dashboard/settings/profile',
+        icon: 'User',
+        enabled: true,
+      },
+      {
+        id: 'billing',
+        labelKey: 'common.navigation.billing',
+        href: '/dashboard/settings/billing',
+        icon: 'CreditCard',
+        enabled: true,
+      },
+      {
+        id: 'help',
+        labelKey: 'common.navigation.help',
+        href: '/support',
+        icon: 'HelpCircle',
+        enabled: false,
+        external: true,
+      },
+    ],
+  },
+}
+
+export default APP_CONFIG_OVERRIDES

@@ -1,0 +1,53 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+.next/
+dist/
+out/
+build/
+.expo/
+
+# NextSpark
+.nextspark/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Claude Code
+.claude/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Testing
+coverage/
+.nyc_output/
+
+# Cypress (theme-based in web/)
+web/contents/themes/*/tests/cypress/videos
+web/contents/themes/*/tests/cypress/screenshots
+web/contents/themes/*/tests/cypress/allure-results
+web/contents/themes/*/tests/cypress/allure-report
+
+# Jest (theme-based in web/)
+web/contents/themes/*/tests/jest/coverage
+
+# Mobile specific
+mobile/.expo/
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+web-build/

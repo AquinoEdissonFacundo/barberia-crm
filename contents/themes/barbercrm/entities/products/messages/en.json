@@ -1,0 +1,52 @@
+{
+  "entity": {
+    "singular": "Product",
+    "plural": "Products"
+  },
+  "fields": {
+    "name": {
+      "label": "Name",
+      "placeholder": "Enter product name...",
+      "description": "Product name"
+    },
+    "description": {
+      "label": "Description",
+      "placeholder": "Enter product description...",
+      "description": "Product description"
+    },
+    "price": {
+      "label": "Price",
+      "placeholder": "0.00",
+      "description": "Product price"
+    },
+    "stock": {
+      "label": "Stock",
+      "placeholder": "0",
+      "description": "Units available in stock"
+    },
+    "category": {
+      "label": "Category",
+      "placeholder": "Select category...",
+      "description": "Product category",
+      "options": {
+        "shampoo": "Shampoo",
+        "conditioner": "Conditioner",
+        "styling": "Styling",
+        "tools": "Tools",
+        "other": "Other"
+      }
+    }
+  },
+  "actions": {
+    "create": "Create Product",
+    "edit": "Edit Product",
+    "delete": "Delete Product"
+  },
+  "messages": {
+    "created": "Product created successfully",
+    "updated": "Product updated successfully",
+    "deleted": "Product deleted successfully",
+    "noProducts": "No products found",
+    "createFirst": "Create your first product to get started"
+  }
+}

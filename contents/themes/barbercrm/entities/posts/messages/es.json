@@ -1,0 +1,55 @@
+{
+  "entity": {
+    "singular": "Post",
+    "plural": "Posts"
+  },
+  "fields": {
+    "title": {
+      "label": "Título",
+      "placeholder": "Ingresa el título del post...",
+      "description": "Título del post"
+    },
+    "slug": {
+      "label": "Slug",
+      "placeholder": "slug-del-post",
+      "description": "Identificador amigable para la URL"
+    },
+    "status": {
+      "label": "Estado",
+      "description": "Estado de publicación",
+      "options": {
+        "draft": "Borrador",
+        "published": "Publicado",
+        "scheduled": "Programado",
+        "archived": "Archivado"
+      }
+    },
+    "excerpt": {
+      "label": "Extracto",
+      "placeholder": "Descripción breve...",
+      "description": "Resumen corto que se muestra en los listados"
+    },
+    "featuredImage": {
+      "label": "Imagen destacada",
+      "description": "Imagen principal del post"
+    },
+    "categories": {
+      "label": "Categorías",
+      "placeholder": "Seleccionar categorías...",
+      "description": "Categorías del post"
+    }
+  },
+  "actions": {
+    "create": "Crear Post",
+    "edit": "Editar Post",
+    "delete": "Eliminar Post",
+    "publish": "Publicar",
+    "unpublish": "Despublicar"
+  },
+  "messages": {
+    "created": "Post creado exitosamente",
+    "updated": "Post actualizado exitosamente",
+    "deleted": "Post eliminado exitosamente",
+    "published": "Post publicado exitosamente"
+  }
+}

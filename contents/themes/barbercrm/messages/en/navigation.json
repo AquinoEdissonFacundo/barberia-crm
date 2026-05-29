@@ -1,0 +1,33 @@
+{
+  "dashboard": "Dashboard",
+  "navigation": {
+    "dashboard": "Dashboard"
+  },
+  "home": "Home",
+  "tasks": "Tasks",
+  "analytics": "Analytics",
+  "settings": "Settings",
+  "profile": "Profile",
+  "team": "Team",
+  "billing": "Billing",
+  "help": "Help",
+  "logout": "Logout",
+  "notifications": "Notifications",
+  "search": "Search",
+  "quickCreate": "Quick Create",
+  "quickCreateNew": "Create new {entity}",
+  "viewAll": "View All",
+  "gestion": "Management",
+  "barbershop": "Barbershop",
+  "appointments": "Appointments",
+  "clients": "Clients",
+  "barbers": "Barbers",
+  "services": "Services",
+  "calendar": "My Calendar",
+  "clientsAlert": "Clients to Contact",
+  "bookingPage": "Booking Page",
+  "shopConfig": "Shop Settings",
+  "customizeShop": "Customize Shop",
+  "tools": "Tools",
+  "products": "Products"
+}

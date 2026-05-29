@@ -1,0 +1,29 @@
+{
+  "plans": {
+    "starter": {
+      "name": "Basic",
+      "description": "For small barbershops just getting started"
+    },
+    "pro": {
+      "name": "Pro",
+      "description": "For growing barbershops with multiple barbers"
+    },
+    "business": {
+      "name": "Business",
+      "description": "For large barbershops with advanced analytics"
+    }
+  },
+  "features": {
+    "online_booking": "Online Booking Page",
+    "online_booking_description": "Public booking page where clients can schedule appointments",
+    "analytics": "Advanced Analytics",
+    "analytics_description": "Detailed reports on revenue, appointments, and barber performance",
+    "priority_support": "Priority Support",
+    "priority_support_description": "Faster response times from our support team"
+  },
+  "limits": {
+    "barbers": "Barbers",
+    "appointments_per_month": "Appointments / month"
+  },
+  "unlimited": "Unlimited"
+}

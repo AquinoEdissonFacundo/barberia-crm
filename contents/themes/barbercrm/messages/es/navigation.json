@@ -1,0 +1,33 @@
+{
+  "dashboard": "Panel",
+  "navigation": {
+    "dashboard": "Panel"
+  },
+  "home": "Inicio",
+  "tasks": "Tareas",
+  "analytics": "Analíticas",
+  "settings": "Configuración",
+  "profile": "Perfil",
+  "team": "Equipo",
+  "billing": "Facturación",
+  "help": "Ayuda",
+  "logout": "Cerrar sesión",
+  "notifications": "Notificaciones",
+  "search": "Buscar",
+  "quickCreate": "Crear rápido",
+  "quickCreateNew": "Crear {entity}",
+  "viewAll": "Ver todo",
+  "gestion": "Gestión",
+  "barbershop": "Barbería",
+  "appointments": "Citas",
+  "clients": "Clientes",
+  "barbers": "Barberos",
+  "services": "Servicios",
+  "calendar": "Mi Calendario",
+  "clientsAlert": "Clientes por Contactar",
+  "bookingPage": "Página de Reservas",
+  "shopConfig": "Config. Barbería",
+  "customizeShop": "Personalizar Barbería",
+  "tools": "Herramientas",
+  "products": "Productos"
+}

@@ -1,0 +1,52 @@
+{
+  "entity": {
+    "singular": "Producto",
+    "plural": "Productos"
+  },
+  "fields": {
+    "name": {
+      "label": "Nombre",
+      "placeholder": "Ingresa el nombre del producto...",
+      "description": "Nombre del producto"
+    },
+    "description": {
+      "label": "Descripción",
+      "placeholder": "Ingresa la descripción del producto...",
+      "description": "Descripción del producto"
+    },
+    "price": {
+      "label": "Precio",
+      "placeholder": "0.00",
+      "description": "Precio del producto"
+    },
+    "stock": {
+      "label": "Stock",
+      "placeholder": "0",
+      "description": "Unidades disponibles en stock"
+    },
+    "category": {
+      "label": "Categoría",
+      "placeholder": "Seleccionar categoría...",
+      "description": "Categoría del producto",
+      "options": {
+        "shampoo": "Shampoo",
+        "conditioner": "Acondicionador",
+        "styling": "Styling",
+        "tools": "Herramientas",
+        "other": "Otro"
+      }
+    }
+  },
+  "actions": {
+    "create": "Crear Producto",
+    "edit": "Editar Producto",
+    "delete": "Eliminar Producto"
+  },
+  "messages": {
+    "created": "Producto creado exitosamente",
+    "updated": "Producto actualizado exitosamente",
+    "deleted": "Producto eliminado exitosamente",
+    "noProducts": "No se encontraron productos",
+    "createFirst": "Crea tu primer producto para comenzar"
+  }
+}
