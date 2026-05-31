@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation'
-import { PLUGIN_SUPERADMIN_PAGES } from '@/.nextspark/registries/plugin-registry'
+import { PLUGIN_SUPERADMIN_PAGES } from '@nextsparkjs/registries/plugin-registry'
 
 interface PluginPageProps {
   params: Promise<{ plugin: string }>
