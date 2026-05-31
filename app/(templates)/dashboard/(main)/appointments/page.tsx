@@ -1,3 +1,5 @@
+﻿export const dynamic = 'force-dynamic'
+
 /**
  * Template page - directly imports from theme
  * Template: app/dashboard/(main)/appointments/page.tsx

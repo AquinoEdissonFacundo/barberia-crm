@@ -1,3 +1,5 @@
+﻿export const dynamic = 'force-dynamic'
+
 import { useTranslations } from 'next-intl'
 import { PermissionsMatrix } from '@nextsparkjs/core/components/permissions'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@nextsparkjs/core/components/ui/tabs'
