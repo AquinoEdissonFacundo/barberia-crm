@@ -34,6 +34,9 @@ const nextConfig = {
     '/superadmin/docs/**/*': ['./contents/**/docs/**/*'],
     '/devtools/tests/**/*': ['./contents/**/tests/**/*'],
   },
+  outputFileTracingExcludes: {
+    '/api/v1/devtools/docs': ['./next.config.mjs'],
+  },
   // Optimize imports from @nextsparkjs/core to reduce bundle size and improve tree-shaking
   modularizeImports: {
     '@nextsparkjs/core/components/ui': {
