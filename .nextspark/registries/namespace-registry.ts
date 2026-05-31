@@ -1,7 +1,7 @@
 /**
  * Auto-generated Translation Namespace Registry
  *
- * Generated at: 2026-05-31T11:38:05.464Z
+ * Generated at: 2026-05-31T16:00:45.258Z
  * Core namespaces: 9
  * Entity namespaces: 0
  * Route strategies: 5

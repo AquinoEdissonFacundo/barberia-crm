@@ -1,7 +1,7 @@
 /**
  * Auto-generated Permissions Registry
  *
- * Generated at: 2026-05-31T11:38:05.465Z
+ * Generated at: 2026-05-31T16:00:45.259Z
  * Theme: barbercrm
  * Team permissions: 11
  * Feature permissions: 0
@@ -902,6 +902,6 @@ export const PERMISSIONS_METADATA = {
   customRoles: CUSTOM_ROLES.additionalRoles?.length ?? 0,
   availableRoles: AVAILABLE_ROLES.length,
   categories: Object.keys(PERMISSIONS_BY_CATEGORY).length,
-  generatedAt: '2026-05-31T11:38:05.465Z',
+  generatedAt: '2026-05-31T16:00:45.259Z',
   theme: 'barbercrm'
 }

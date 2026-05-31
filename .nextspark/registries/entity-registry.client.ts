@@ -3,7 +3,7 @@
 /**
  * Client-Safe Entity Registry
  *
- * Generated at: 2026-05-31T11:38:05.452Z
+ * Generated at: 2026-05-31T16:00:45.246Z
  * Entities discovered: 9
  *
  * This is the client-safe version of the entity registry.

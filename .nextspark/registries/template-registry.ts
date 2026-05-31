@@ -1,7 +1,7 @@
 /**
  * Auto-generated Template Registry
  *
- * Generated at: 2026-05-31T11:38:05.458Z
+ * Generated at: 2026-05-31T16:00:45.253Z
  * Templates discovered: 14
  * App paths with overrides: 14
  *
@@ -279,6 +279,6 @@ export const TEMPLATE_METADATA = {
   uniquePaths: 14,
   templateTypes: ["layout","loading","page"],
   themeDistribution: {"barbercrm":14},
-  generatedAt: '2026-05-31T11:38:05.458Z',
+  generatedAt: '2026-05-31T16:00:45.253Z',
   paths: ['app/(public)/layout.tsx', 'app/(public)/loading.tsx', 'app/(public)/page.tsx', 'app/(public)/support/page.tsx', 'app/dashboard/(main)/appointments/page.tsx', 'app/dashboard/(main)/barbers/[id]/page.tsx', 'app/dashboard/(main)/calendar/page.tsx', 'app/dashboard/(main)/clients/[id]/page.tsx', 'app/dashboard/(main)/clients-alert/page.tsx', 'app/dashboard/(main)/customize/page.tsx', 'app/dashboard/(main)/products/page.tsx', 'app/dashboard/analytics/loading.tsx', 'app/dashboard/analytics/page.tsx', 'app/dashboard/settings/shop/page.tsx']
 }

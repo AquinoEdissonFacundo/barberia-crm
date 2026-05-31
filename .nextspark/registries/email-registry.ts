@@ -1,7 +1,7 @@
 /**
  * Auto-generated Email Registry
  *
- * Generated at: 2026-05-31T11:38:05.458Z
+ * Generated at: 2026-05-31T16:00:45.253Z
  * Templates discovered: 1
  * Sources: verify-email(theme)
  *
@@ -30,6 +30,6 @@ export const EMAIL_REGISTRY_METADATA = {
 
 export const EMAIL_REGISTRY_INFO = {
   totalTemplates: 1,
-  generatedAt: '2026-05-31T11:38:05.458Z',
+  generatedAt: '2026-05-31T16:00:45.253Z',
   slugs: ['verify-email'] as const,
 } as const

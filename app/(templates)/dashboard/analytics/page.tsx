@@ -1,5 +1,3 @@
-﻿export const dynamic = 'force-dynamic'
-
 /**
  * Template page - directly imports from theme
  * Template: app/dashboard/analytics/page.tsx

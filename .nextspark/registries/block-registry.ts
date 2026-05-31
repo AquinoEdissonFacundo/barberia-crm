@@ -1,7 +1,7 @@
 /**
  * Auto-generated Block Registry
  *
- * Generated at: 2026-05-31T11:38:05.458Z
+ * Generated at: 2026-05-31T16:00:45.253Z
  * Blocks discovered: 1
  * Categories: hero
  *
@@ -69,6 +69,6 @@ export const BLOCK_METADATA = {
   blocksByCategory: {
     'hero': 1
   },
-  generatedAt: '2026-05-31T11:38:05.458Z',
+  generatedAt: '2026-05-31T16:00:45.253Z',
   blocks: ['hero']
 }

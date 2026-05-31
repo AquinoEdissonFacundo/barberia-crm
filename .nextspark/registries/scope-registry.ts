@@ -1,7 +1,7 @@
 /**
  * Auto-generated API Scope Registry
  *
- * Generated at: 2026-05-31T11:38:05.464Z
+ * Generated at: 2026-05-31T16:00:45.258Z
  * Base scopes: 0
  * Role configurations: 4
  * Flag configurations: 4

@@ -1,6 +1,4 @@
-﻿export const dynamic = 'force-dynamic'
-
-'use client';
+﻿'use client';
 
 import { resetPasswordSchema, type ResetPasswordFormData } from '@nextsparkjs/core/lib/validation';
 import { useAuth } from '@nextsparkjs/core/hooks/useAuth';

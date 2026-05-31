@@ -1,7 +1,7 @@
 /**
  * Auto-generated Feature Registry
  *
- * Generated at: 2026-05-31T11:38:05.511Z
+ * Generated at: 2026-05-31T16:00:45.301Z
  * Theme: barbercrm
  * Features: 12
  * Flows: 0
@@ -1853,7 +1853,7 @@ export const TAGS_REGISTRY = {
 
 export const COVERAGE_SUMMARY = {
   theme: 'barbercrm',
-  generatedAt: '2026-05-31T11:38:05.512Z',
+  generatedAt: '2026-05-31T16:00:45.302Z',
   features: {
     total: 12,
     withTests: 2,

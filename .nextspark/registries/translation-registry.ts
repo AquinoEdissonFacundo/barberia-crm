@@ -1,7 +1,7 @@
 /**
  * Auto-generated Translation Registry
  *
- * Generated at: 2026-05-31T11:38:05.457Z
+ * Generated at: 2026-05-31T16:00:45.252Z
  * Active theme: barbercrm
  * Supported locales: en, es
  * Themes with translations: 1
@@ -99,7 +99,7 @@ export const TRANSLATION_METADATA = {
   totalThemeTranslations: 2,
   totalEntityTranslations: 16,
   totalEntitiesWithTranslations: 8,
-  generatedAt: '2026-05-31T11:38:05.457Z',
+  generatedAt: '2026-05-31T16:00:45.252Z',
   activeTheme: 'barbercrm',
   supportedLocales: ['en', 'es'],
   themes: ['barbercrm'],

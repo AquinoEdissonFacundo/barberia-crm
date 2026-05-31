@@ -1,7 +1,7 @@
 /**
  * Auto-generated API Presets Registry
  *
- * Generated at: 2026-05-31T11:38:05.467Z
+ * Generated at: 2026-05-31T16:00:45.261Z
  * Theme: barbercrm
  * Total endpoints: 17
  * Total presets: 95
@@ -999,7 +999,7 @@ export const API_PRESETS_REGISTRY: ApiPresetsRegistryStructure = {
   meta: {
     totalEndpoints: 17,
     totalPresets: 95,
-    generatedAt: '2026-05-31T11:38:05.467Z',
+    generatedAt: '2026-05-31T16:00:45.261Z',
     themeName: 'barbercrm'
   }
 }

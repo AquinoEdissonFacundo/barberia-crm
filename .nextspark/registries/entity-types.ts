@@ -1,5 +1,5 @@
 // 🤖 AUTO-GENERATED FILE - DO NOT EDIT
-// Generated at: 2026-05-31T11:38:05.452Z
+// Generated at: 2026-05-31T16:00:45.247Z
 // Source: scripts/build-registry.mjs
 
 // ==================== Auto-Generated Entity Types ====================
@@ -55,6 +55,6 @@ export const SEARCH_TYPE_PRIORITIES: Record<SearchResultType, number> = {
 export const ENTITY_METADATA = {
   totalEntities: 9,
   entityNames: ['patterns', 'appointments', 'barbers', 'clients', 'pages', 'posts', 'products', 'services', 'tasks'],
-  generatedAt: '2026-05-31T11:38:05.452Z',
+  generatedAt: '2026-05-31T16:00:45.247Z',
   source: 'build-registry.mjs'
 } as const

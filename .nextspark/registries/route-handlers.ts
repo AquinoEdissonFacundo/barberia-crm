@@ -1,7 +1,7 @@
 /**
  * Auto-generated Route Handlers Registry
  *
- * Generated at: 2026-05-31T11:38:05.453Z
+ * Generated at: 2026-05-31T16:00:45.247Z
  * Core routes: 31
  * Entity routes: 18
  * Theme routes: 0
@@ -140,7 +140,7 @@ export const API_ROUTES_SUMMARY = {
     theme: 0,
     plugins: 0
   },
-  generatedAt: '2026-05-31T11:38:05.453Z'
+  generatedAt: '2026-05-31T16:00:45.248Z'
 }
 
 // ==================== Service Layer ====================

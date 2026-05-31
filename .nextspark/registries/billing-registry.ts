@@ -1,5 +1,5 @@
 // AUTO-GENERATED FILE - DO NOT EDIT MANUALLY
-// Generated at: 2026-05-31T11:38:05.464Z
+// Generated at: 2026-05-31T16:00:45.257Z
 // Active theme: barbercrm
 // To regenerate: node scripts/build-registry.mjs
 //

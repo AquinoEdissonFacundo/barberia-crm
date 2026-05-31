@@ -1,7 +1,7 @@
 /**
  * Auto-generated Plugin Registry - SERVER ONLY
  *
- * Generated at: 2026-05-31T11:38:05.451Z
+ * Generated at: 2026-05-31T16:00:45.246Z
  * Plugins discovered: 0
  *
  * WARNING: This registry includes server-side route handlers and Node.js dependencies.
@@ -133,6 +133,6 @@ export const PLUGIN_METADATA = {
   pluginsWithAssets: 0,
   totalRouteFiles: 0,
   totalPluginEntities: 0,
-  generatedAt: '2026-05-31T11:38:05.451Z',
+  generatedAt: '2026-05-31T16:00:45.246Z',
   plugins: []
 }

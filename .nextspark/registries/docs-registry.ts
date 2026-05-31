@@ -1,7 +1,7 @@
 /**
  * Auto-generated Documentation Registry
  *
- * Generated at: 2026-05-31T11:38:05.466Z
+ * Generated at: 2026-05-31T16:00:45.260Z
  * Theme: barbercrm
  * Public sections: 1
  * Superadmin sections: 2

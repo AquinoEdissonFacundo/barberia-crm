@@ -1,7 +1,7 @@
 /**
  * Auto-generated API Docs Registry
  *
- * Generated at: 2026-05-31T11:38:05.467Z
+ * Generated at: 2026-05-31T16:00:45.261Z
  * Theme: barbercrm
  * Total docs: 17
  *
@@ -120,7 +120,7 @@ export const API_DOCS_REGISTRY: ApiDocsRegistryStructure = {
   },
   meta: {
     totalDocs: 17,
-    generatedAt: '2026-05-31T11:38:05.467Z',
+    generatedAt: '2026-05-31T16:00:45.261Z',
     themeName: 'barbercrm'
   }
 }
