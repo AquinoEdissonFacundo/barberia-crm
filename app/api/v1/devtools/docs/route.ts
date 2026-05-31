@@ -13,7 +13,7 @@
 
 import { NextRequest, NextResponse } from 'next/server'
 import { readFile } from 'fs/promises'
-import { join, dirname } from 'path'
+import { join } from 'path'
 import { existsSync } from 'fs'
 import { withRateLimitTier } from '@nextsparkjs/core/lib/api/rate-limit'
 
@@ -42,43 +42,10 @@ function isValidPath(path: string): boolean {
 }
 
 /**
- * Detect monorepo root by searching for pnpm-workspace.yaml
- */
-function detectMonorepoRoot(startDir: string): string | null {
-  let dir = startDir
-  const maxDepth = 10
-  let depth = 0
-
-  while (dir !== '/' && depth < maxDepth) {
-    if (existsSync(join(dir, 'pnpm-workspace.yaml'))) {
-      return dir
-    }
-    dir = dirname(dir)
-    depth++
-  }
-
-  return null
-}
-
-/**
  * Get all possible base paths for resolving doc files
- * Handles both monorepo and npm modes
  */
 function getBasePaths(): string[] {
-  const cwd = process.cwd()
-  const paths: string[] = []
-
-  // Always try cwd first (works for npm mode with contents/)
-  paths.push(cwd)
-
-  // Check if we're in monorepo mode
-  const monorepoRoot = detectMonorepoRoot(cwd)
-  if (monorepoRoot && monorepoRoot !== cwd) {
-    // In monorepo, themes are at repo root
-    paths.push(monorepoRoot)
-  }
-
-  return paths
+  return [process.cwd()]
 }
 
 export const GET = withRateLimitTier(async (request: NextRequest) => {
