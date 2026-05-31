@@ -8,8 +8,8 @@ out/
 build/
 .expo/
 
-# NextSpark
-.nextspark/
+# NextSpark (only exclude cache, keep generated registries)
+.nextspark/cache/
 
 # Environment
 .env
