@@ -1,0 +1,9 @@
+{
+  "name": "@nextsparkjs/registries",
+  "version": "0.0.1",
+  "main": "./index.ts",
+  "exports": {
+    ".": "./index.ts",
+    "./*": "./*.ts"
+  }
+}

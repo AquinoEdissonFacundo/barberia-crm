@@ -3,3 +3,4 @@
 packages:
   - 'contents/themes/*'
   - 'contents/plugins/*'
+  - '.nextspark/registries'

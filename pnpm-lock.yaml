@@ -166,6 +166,8 @@ importers:
         specifier: ^5.97.0
         version: 5.107.1(@swc/core@1.15.40)
 
+  .nextspark/registries: {}
+
 packages:
 
   '@adobe/css-tools@4.5.0':
