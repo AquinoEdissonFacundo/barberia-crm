@@ -16,7 +16,7 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
 
-  transpilePackages: ['@nextsparkjs/core'],
+  transpilePackages: ['@nextsparkjs/core', '@nextsparkjs/registries'],
   serverExternalPackages: ['handlebars'],
   turbopack: {
     root: __dirname,
